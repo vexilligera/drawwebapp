@@ -412,7 +412,6 @@ LayerTreeNode.prototype = {
 				if (this.children[i].visible) {
 					var child = this.children[i];
 					this.setFramebuffer(--t & 1);
-					console.log(t, child.name);
 					this.layerTree.shaderSet.selectShader('blend', child.blendMode);
 					switch (child.blendMode) {
 					case 0:

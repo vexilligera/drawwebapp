@@ -169,7 +169,7 @@ class UITooltip extends React.Component {
 			}
 			l.push(
 				<Menu.Item key={s}>
-					<Icon><i className={icon} /></Icon>
+					<i class="anticon" ><i className={icon} /></i>
 					<span>{s}</span>
 				</Menu.Item>
 			);
@@ -236,8 +236,8 @@ class UITooltip extends React.Component {
 							this.props.shortcutCb.selectBrush(this.state.prevBrush);
 							this.forceUpdate();
 						}}>
-							{this.state.prevBrush == '*eraser*' ? (<Icon><i className='fa fa-eraser' /></Icon>)
-															: (<Icon><i className='fa fa-paint-brush' /></Icon>)}
+							{this.state.prevBrush == '*eraser*' ? (<i class="anticon" ><i className='fa fa-eraser' /></i>)
+															: (<i class="anticon" ><i className='fa fa-paint-brush' /></i>)}
 						</Button>
 					</Col>
 					<Col span={6}>
@@ -277,36 +277,36 @@ class UITooltip extends React.Component {
 							this.setState({shortcutToggled: !this.state.shortcutToggled});
 					}}
 					defaultSelectedKeys={['hand']} mode="inline" theme="dark" inlineCollapsed={true} onSelect={this.handleMenuSelect}>
-					<SubMenu onTitleClick={this.handleSubMenuSelect} key='pointer' title={<Icon><i className={this.iconMap[this.itemMap['pointer']]} /></Icon>}>
+					<SubMenu onTitleClick={this.handleSubMenuSelect} key='pointer' title={<i class="anticon" ><i className={this.iconMap[this.itemMap['pointer']]} /></i>}>
 						<Menu.Item key='hand'>
-							<Icon><i className='fa fa-hand-paper-o' /></Icon>
+							<i class="anticon" ><i className='fa fa-hand-paper-o' /></i>
 							<span>Touch</span>
 						</Menu.Item>
 						<Menu.Item key='mouse'>
-							<Icon><i className='fa fa-mouse-pointer' /></Icon>
+							<i class="anticon" ><i className='fa fa-mouse-pointer' /></i>
 							<span>Mouse</span>
 						</Menu.Item>
 					</SubMenu>
 					<Menu.Item key='arbitrary_lasso'>
-						<Icon><i className='fa fa-scissors' /></Icon>
+						<i class="anticon" ><i className='fa fa-scissors' /></i>
 						<span>Lasso</span>
 					</Menu.Item>
 					<Menu.Item key='eraser'>
-						<Icon><i className='fa fa-eraser' /></Icon>
+						<i class="anticon" ><i className='fa fa-eraser' /></i>
 						<span>Eraser</span>
 					</Menu.Item>
-					<SubMenu onTitleClick={this.handleSubMenuSelect} key='brush' title={<Icon><i className={this.iconMap[this.itemMap['brush']]} /></Icon>}>
+					<SubMenu onTitleClick={this.handleSubMenuSelect} key='brush' title={<i class="anticon" ><i className={this.iconMap[this.itemMap['brush']]} /></i>}>
 						{this.getBrushes()}
 					</SubMenu>
 					<Menu.Item key='picker'>
-						<Icon><i className='fa fa-eyedropper' /></Icon>
+						<i class="anticon" ><i className='fa fa-eyedropper' /></i>
 						<span>Color picker</span>
 					</Menu.Item>
 					<Menu.Item key='palette'>
-						<Icon><i className='fa fa-tachometer' /></Icon>
+						<i class="anticon" ><i className='fa fa-tachometer' /></i>
 						<span>Palette</span>
 					</Menu.Item>
-					<SubMenu key='zoom' title={<Icon><i className={this.iconMap['zoom']} /></Icon>}>
+					<SubMenu key='zoom' title={<i class="anticon" ><i className={this.iconMap['zoom']} /></i>}>
 						<Menu.Item key='zoom in'>
 							<span>Zoom in</span>
 						</Menu.Item>
@@ -318,15 +318,15 @@ class UITooltip extends React.Component {
 						</Menu.Item>
 					</SubMenu>
 					<Menu.Item key='layer'>
-						<Icon><i className='fa fa-clone' /></Icon>
+						<i class="anticon" ><i className='fa fa-clone' /></i>
 						<span>Layers</span>
 					</Menu.Item>
 					<Menu.Item key='shortcut'>
-						<Icon><i className='fa fa-keyboard-o' /></Icon>
+						<i class="anticon" ><i className='fa fa-keyboard-o' /></i>
 						<span>Shortcut</span>
 					</Menu.Item>
 					<Menu.Item key='settings'>
-						<Icon><i className='fa fa-cog' /></Icon>
+						<i class="anticon" ><i className='fa fa-cog' /></i>
 						<span>Settings</span>
 					</Menu.Item>
 				</Menu>

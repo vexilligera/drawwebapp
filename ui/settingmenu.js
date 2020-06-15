@@ -96,16 +96,16 @@ class UISettingMenu extends React.Component {
 								defaultOpenKeys={['brushes']}
 								style={{ height: '100%', borderLeft: 1 }}
 							>
-								<SubMenu key="brushes" title={<Icon><i className={'fa fa-paint-brush'} /> Brushes</Icon>}>
+								<SubMenu key="brushes" title={<i class="anticon"><i className={'fa fa-paint-brush'} /> Brushes</i>}>
 									<Menu.Item key="general">General</Menu.Item>
 									<Menu.Item key="presets">Presets <Icon type="menu-unfold" /></Menu.Item>
 								</SubMenu>
-								<Menu.Item key="palette"><Icon><i className={'fa fa-tachometer'} /> Color</Icon></Menu.Item>
-								<Menu.Item key="hotkey"><Icon><i className={'fa fa-keyboard-o'} /> Hotkeys</Icon></Menu.Item>
-								<Menu.Item key="gesture"><Icon><i className={'fa fa-hand-paper-o'} /> Gesture</Icon></Menu.Item>
-								<Menu.Item key="tint"><Icon><i className={'fa fa-tint'} /> Tint</Icon></Menu.Item>
-								<Menu.Item key="view"><Icon><i className={'fa fa-eye'} /> View</Icon></Menu.Item>
-								<Menu.Item key="file"><Icon><i className={'fa fa-file'} /> File</Icon></Menu.Item>
+								<Menu.Item key="palette"><i class="anticon"><i className={'fa fa-tachometer'} /> Color</i></Menu.Item>
+								<Menu.Item key="hotkey"><i class="anticon"><i className={'fa fa-keyboard-o'} /> Hotkeys</i></Menu.Item>
+								<Menu.Item key="gesture"><i class="anticon"><i className={'fa fa-hand-paper-o'} /> Gesture</i></Menu.Item>
+								<Menu.Item key="tint"><i class="anticon"><i className={'fa fa-tint'} /> Tint</i></Menu.Item>
+								<Menu.Item key="view"><i class="anticon"><i className={'fa fa-eye'} /> View</i></Menu.Item>
+								<Menu.Item key="file"><i class="anticon"><i className={'fa fa-file'} /> File</i></Menu.Item>
 							</Menu>
 						</Sider>
 						<Content style={{ background: '#fff' }}>

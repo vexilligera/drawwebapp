@@ -16,7 +16,7 @@ class TextSlide extends React.Component {
 		this.style = props.style;
 	}
 
-	componentWillReceiveProps(nextProps) {
+	UNSAFE_componentWillReceiveProps(nextProps) {
 		this.state.inputValue = Math.round(nextProps.defaultVal);
 	}
 
@@ -68,7 +68,7 @@ class IntegerStep extends React.Component {
 			this.props.onChange(this.state.name, value);
 	}
 
-	componentWillReceiveProps(nextProps) {
+	UNSAFE_componentWillReceiveProps(nextProps) {
 		this.state.inputValue = Math.round(nextProps.defaultVal);
 	}
 
@@ -154,7 +154,7 @@ class TextInput extends React.Component {
 		};
 	}
 
-	componentWillReceiveProps(nextProps) {
+	UNSAFE_componentWillReceiveProps(nextProps) {
 		this.state.title = nextProps.title;
 		this.state.value = nextProps.value;
 		this.state.defaultValue = nextProps.defaultValue;
@@ -200,7 +200,7 @@ class TextSlideInput extends React.Component {
 		this.style = props.style;
 	}
 
-	componentWillReceiveProps(nextProps) {
+	UNSAFE_componentWillReceiveProps(nextProps) {
 		this.state.inputValue = Math.round(nextProps.value == undefined ? nextProps.defaultVal : nextProps.value);
 		this.state.titleText = nextProps.titleText;
 		this.state.max = nextProps.max;
